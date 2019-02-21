@@ -1,0 +1,109 @@
+import matplotlib.pyplot as plt; plt.rcdefaults()
+import numpy as np
+
+print('SPA 1 = Antelope Valley')
+print('SPA 2 = San Fernando Valley')
+print('SPA 3 = San Gabriel Valley')
+print('SPA 4 = Metro LA')
+print('SPA 5 = West LA')
+print('SPA 6 = South LA')
+print('SPA 7 = East LA')
+print('SPA 8 = South Bay Harbor')
+
+"""Sheltered Youths"""
+
+objects = ('SPA 1', 'SPA 2', 'SPA 3', 'SPA 4', 'SPA 5', 'SPA 6', 'SPA 7', 'SPA 8')
+y_pos = np.arange(len(objects))
+performance = [572, 1775, 1407, 4716, 1180, 2364, 1266, 1686]
+ 
+plt.bar(y_pos, performance, align='center', alpha=0.5)
+plt.xticks(y_pos, objects)
+plt.xlabel('Geographic Area')
+plt.ylabel('Number of Sheltered Homeless')
+plt.title('Sheltered Homeless Population in LA')
+ 
+plt.show()
+
+"""Unsheltered Youths"""
+
+objects = ('SPA 1', 'SPA 2', 'SPA 3', 'SPA 4', 'SPA 5', 'SPA 6', 'SPA 7', 'SPA 8')
+y_pos = np.arange(len(objects))
+performance = [3987, 5852, 2720, 10677, 4331, 6879, 3923, 4459]
+ 
+plt.bar(y_pos, performance, align='center', alpha=0.5)
+plt.xticks(y_pos, objects)
+plt.xlabel('Geographic Area')
+plt.ylabel('Number of Unsheltered Homeless')
+plt.title('Unsheltered Homeless Population in LA')
+ 
+plt.show()
+
+"""Individuals"""
+
+objects = ('SPA 1', 'SPA 2', 'SPA 3', 'SPA 4', 'SPA 5', 'SPA 6', 'SPA 7', 'SPA 8')
+y_pos = np.arange(len(objects))
+performance = [3767, 6265, 2879, 13838, 4815, 7527, 4276, 3467]
+ 
+plt.bar(y_pos, performance, align='center', alpha=0.5)
+plt.xticks(y_pos, objects)
+plt.xlabel('Geographic Area')
+plt.ylabel('Number of Individuals')
+plt.title('Individual Homeless Population in LA')
+ 
+plt.show()
+
+"""Family Members"""
+
+objects = ('SPA 1', 'SPA 2', 'SPA 3', 'SPA 4', 'SPA 5', 'SPA 6', 'SPA 7', 'SPA 8')
+y_pos = np.arange(len(objects))
+performance = [727, 1167, 673, 1482, 691, 1701, 893, 772]
+ 
+plt.bar(y_pos, performance, align='center', alpha=0.5)
+plt.xticks(y_pos, objects)
+plt.xlabel('Geographic Area')
+plt.ylabel('Number of Homeless Family Members')
+plt.title('Sheltered Homeless Family Members in LA')
+ 
+plt.show()
+
+"""Families"""
+
+objects = ('SPA 1', 'SPA 2', 'SPA 3', 'SPA 4', 'SPA 5', 'SPA 6', 'SPA 7', 'SPA 8')
+y_pos = np.arange(len(objects))
+performance = [285, 398, 236, 549, 227, 612, 319, 271]
+ 
+plt.bar(y_pos, performance, align='center', alpha=0.5)
+plt.xticks(y_pos, objects)
+plt.xlabel('Geographic Area')
+plt.ylabel('Number of Homeless Families')
+plt.title('Homeless Families in LA')
+ 
+plt.show()
+
+"""Unaccompanied Minors"""
+
+objects = ('SPA 1', 'SPA 2', 'SPA 3', 'SPA 4', 'SPA 5', 'SPA 6', 'SPA 7', 'SPA 8')
+y_pos = np.arange(len(objects))
+performance = [65, 27, 0, 73, 5, 15, 20, 43]
+ 
+plt.bar(y_pos, performance, align='center', alpha=0.5)
+plt.xticks(y_pos, objects)
+plt.xlabel('Geographic Area')
+plt.ylabel('Number of Unaccompanied Minors')
+plt.title('Unaccompanied Minors in LA')
+ 
+plt.show()
+
+"""Total"""
+
+objects = ('SPA 1', 'SPA 2', 'SPA 3', 'SPA 4', 'SPA 5', 'SPA 6', 'SPA 7', 'SPA 8', 'Total')
+y_pos = np.arange(len(objects))
+performance = [4559, 7459, 3552, 15939, 5511, 9243, 5189, 4282, 55188]
+ 
+plt.bar(y_pos, performance, align='center', alpha=0.5)
+plt.xticks(y_pos, objects)
+plt.xlabel('Geographic Area')
+plt.ylabel('Homeless Population of LA')
+plt.title('Total Homeless Population of LA')
+ 
+plt.show()
